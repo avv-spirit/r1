@@ -1,11 +1,12 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import valera from './Car/Car'
+import Car from "./Car/Car";
 
-function App() {
+/*function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -20,6 +21,23 @@ function App() {
       </header>
     </div>
   );
+}*/
+
+class App extends Component {
+  render () {
+    const divvStyle = {
+        textAlign: 'center',
+        outline: '2px solid red',
+        fontSize: '20px'
+      }
+
+    return (
+        <div style={divvStyle} className="App">
+          <h1 style={{color: 'red'}}>Valera</h1>
+          <Car />
+        </div>
+    );
+  }
 }
 
 export default App;
