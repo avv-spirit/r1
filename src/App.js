@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import valera from './Car/Car'
 import Car from "./Car/Car";
 
 /*function App() {
@@ -25,16 +24,31 @@ import Car from "./Car/Car";
 
 class App extends Component {
   render () {
-    const divvStyle = {
-        textAlign: 'center',
-        outline: '2px solid red',
-        fontSize: '20px'
-      }
+    const divStyle = {
+      backgroundColor: "gray",
+      textAlign: 'center',
+      outline: '2px solid red',
+      fontSize: '20px'
+    }
+
+    /*const penStyle = {
+      'backgroundColor': "violet",
+      'paddingLeft': '20px',
+      'textAlign': 'left',
+      'outline': '2px solid red',
+      'fontSize': '20px'
+    }*/
 
     return (
-        <div style={divvStyle} className="App">
-          <h1 style={{color: 'red'}}>Valera</h1>
-          <Car />
+        <div style={divStyle} className="App">
+          <h1 style={{color: 'blue', borderBottom: '1px solid black'}}>Valera</h1>
+          <Car name={'Audi'} year={2016}>
+            <p style={{color: 'blue'}}>COLOR</p>
+          </Car>
+          <Car name={'Mercedes-benz'} year={2013}>
+            <p style={{color: 'red'}}>COLOR</p>
+          </Car>
+          <Car name={'Ferrari'} year={2005} />
         </div>
     );
   }
