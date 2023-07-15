@@ -45,10 +45,13 @@ class App extends Component {
           <Car name={'Audi'} year={2016}>
             <p style={{color: 'blue'}}>COLOR</p>
           </Car>
-          <Car name={'Mercedes-benz'} year={2013}>
+          <Car name={'Mercedes-Benz'} year={2013}>
             <p style={{color: 'red'}}>COLOR</p>
           </Car>
           <Car name={'Ferrari'} year={2005} />
+          <Car name={'Maserati'} year={2016}>
+            <p style={{color: 'darkgrey'}}>COLOR</p>
+          </Car>
         </div>
     );
   }
